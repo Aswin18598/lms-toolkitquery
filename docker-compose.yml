@@ -1,0 +1,11 @@
+version: "1.0.0"
+
+services:
+    dev:
+        build:
+            context: ./
+            dockerfile: Dockerfile
+        volumes:
+            - ./:/app
+        ports:
+            - "3001:3001"
